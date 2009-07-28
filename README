@@ -1,0 +1,101 @@
+mp4v2
+------------------------------------------
+The MP4v2 library provides an API to create and modify mp4 files as 
+defined by ISO/IEC 14496-12:2005. MP4v2 was originally bundled with 
+mpeg4ip, but has been moved into its own maintained library due to a 
+combination of the cessation of support of mpeg4ip and the usefulness of 
+this library on its own.
+
+Runtime requirements:
+  cygwin-1.7.0-52
+  libgcc1-4.3.2-2
+  libstdc++6-4.3.2-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-2.19.51-1
+  cygport-0.9.8-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.7a-14
+  make-3.81-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://code.google.com/p/mp4v2/
+
+Canonical download:
+  http://code.google.com/p/mp4v2/downloads/list
+
+-------------------------------------------
+
+Build instructions:
+  unpack mp4v2-1.9.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./mp4v2-1.9.1-X.cygport all
+
+This will create:
+  /usr/src/libmp4v2-devel-1.9.1-X.tar.bz2
+  /usr/src/libmp4v2_1-1.9.1-X.tar.bz2
+  /usr/src/mp4v2-1.9.1-X-src.tar.bz2
+  /usr/src/mp4v2-1.9.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(mp4v2)
+  /usr/bin/mp4art.exe
+  /usr/bin/mp4chaps.exe
+  /usr/bin/mp4extract.exe
+  /usr/bin/mp4file.exe
+  /usr/bin/mp4info.exe
+  /usr/bin/mp4subtitle.exe
+  /usr/bin/mp4tags.exe
+  /usr/bin/mp4track.exe
+  /usr/bin/mp4trackdump.exe
+  /usr/share/doc/mp4v2/COPYING
+  /usr/share/doc/mp4v2/README
+  /usr/share/man/man1/mp4art.1.gz
+  /usr/share/man/man1/mp4file.1.gz
+  /usr/share/man/man1/mp4subtitle.1.gz
+  /usr/share/man/man1/mp4track.1.gz
+
+(libmp4v2_1)
+  /usr/bin/cygmp4v2-1.dll
+
+(libmp4v2-devel)
+  /usr/include/mp4v2/chapter.h
+  /usr/include/mp4v2/file.h
+  /usr/include/mp4v2/file_prop.h
+  /usr/include/mp4v2/general.h
+  /usr/include/mp4v2/isma.h
+  /usr/include/mp4v2/itmf_generic.h
+  /usr/include/mp4v2/itmf_tags.h
+  /usr/include/mp4v2/meta.h
+  /usr/include/mp4v2/mp4v2.h
+  /usr/include/mp4v2/platform.h
+  /usr/include/mp4v2/project.h
+  /usr/include/mp4v2/sample.h
+  /usr/include/mp4v2/streaming.h
+  /usr/include/mp4v2/track.h
+  /usr/include/mp4v2/track_prop.h
+  /usr/lib/libmp4v2.a
+  /usr/lib/libmp4v2.dll.a
+  /usr/lib/libmp4v2.la
+
+------------------
+
+Port Notes:
+
+----- version 1.9.1-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
