@@ -1,9 +1,0 @@
-category: Audio Video
-requires: libgcc1 libstdc++6
-external-source: mp4v2
-sdesc: "MPEG-4 audio/video library (runtime)"
-ldesc: "The MP4v2 library provides an API to create and modify mp4 files 
-as defined by ISO/IEC 14496-12:2005. MP4v2 was originally bundled with 
-mpeg4ip, but has been moved into its own maintained library due to a 
-combination of the cessation of support of mpeg4ip and the usefulness of 
-this library on its own."

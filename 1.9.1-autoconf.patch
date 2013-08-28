@@ -1,0 +1,15 @@
+https://code.google.com/p/mp4v2/issues/detail?id=132
+
+--- origsrc/mp4v2-1.9.1/configure.ac	2013-08-28 12:40:35.289632200 -0500
++++ src/mp4v2-1.9.1/configure.ac	2013-08-28 12:43:20.795098600 -0500
+@@ -22,8 +22,8 @@ m4_define([PRJ_repo_type],ifelse(m4_len(
+ m4_define([PRJ_version],ifelse(
+     PRJ_repo_type,[stable],m4_format([%d.%d.%d],PRJ_version_major,PRJ_version_minor,PRJ_version_point),
+     PRJ_repo_type,[snapshot],m4_format([%d.%d-%s],PRJ_version_major,PRJ_version_minor,PRJ_snapshot),
+-    PRJ_repo_type,[developer],m4_format([%d.%d-r%d],PRJ_version_major,PRJ_version_minor,PRJ_repo_rev),
+-    m4_format([%d.%d-r%d],PRJ_version_major,PRJ_version_minor,PRJ_repo_rev)))
++    PRJ_repo_type,[developer],m4_format([%d.%d-r%s],PRJ_version_major,PRJ_version_minor,PRJ_repo_rev),
++    m4_format([%d.%d-r%s],PRJ_version_major,PRJ_version_minor,PRJ_repo_rev)))
+ 
+ ###############################################################################
+ # initialization
