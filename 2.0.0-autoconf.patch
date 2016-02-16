@@ -1,0 +1,11 @@
+--- origsrc/mp4v2-2.0.0/configure.ac	2012-05-20 17:11:55.000000000 -0500
++++ src/mp4v2-2.0.0/configure.ac	2016-02-16 10:16:47.951058700 -0600
+@@ -20,7 +20,7 @@ m4_define([PRJ_version_hex],m4_format([0
+ 
+ m4_define([PRJ_version],ifelse(
+     PRJ_repo_type,[stable],m4_format([%s],PRJ_repo_branch),
+-    m4_format([%s-r%d],PRJ_repo_branch,PRJ_repo_rev)))
++    m4_format([%s-r%s],PRJ_repo_branch,PRJ_repo_rev)))
+ 
+ ###############################################################################
+ # initialization

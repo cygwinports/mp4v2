@@ -1,5 +1,5 @@
 NAME="mp4v2"
-VERSION=1.9.1
+VERSION=2.0.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MP4 container format library"
@@ -11,17 +11,18 @@ library on its own."
 HOMEPAGE="http://code.google.com/p/mp4v2/"
 SRC_URI="http://mp4v2.googlecode.com/files/mp4v2-${VERSION}.tar.bz2"
 PATCH_URI="
-	1.9.1-build-cygwin.patch
-	1.9.1-autoconf.patch
+	2.0.0-autoconf.patch
 "
 
-PKG_NAMES="mp4v2 libmp4v2_1 libmp4v2-devel"
+PKG_NAMES="mp4v2 libmp4v2_2 libmp4v2-devel"
 mp4v2_CATEGORY="Video"
 mp4v2_SUMMARY="MP4 file utilities"
 mp4v2_CONTENTS="usr/bin/*.exe usr/share/"
-libmp4v2_1_CONTENTS="usr/bin/cygmp4v2-1.dll"
+libmp4v2_2_CONTENTS="usr/bin/cygmp4v2-2.dll"
 libmp4v2_devel_CONTENTS="usr/include/ usr/lib/"
 
 DIFF_EXCLUDES="project.h project.m4"
 
 CYGCONF_ARGS="--disable-fvisibility"
+
+DOCS="doc/*.txt"
